@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <script>
+        // 函数使用分为两步：声明函数 和 调用函数，和C语言类型
+        // function 函数名(形参1，形参2，···) {
+        //     //函数体
+        //      函数名一般位动词
+        // }
+        // 函数名(实参1，实参2，···);---即可调用函数
+        // arguments  ,存储了传递的所有实参 --伪数组展示，可以进行遍历
+
+        // function fn() {
+        //     console.log(arguments);
+        // }
+        // fn(7,8,9);
+
+        // 对象：一组无序的相关属性和方法的集合,所有的事物都是对象。对象类似于C语言中的结构体
+        //对象由 属性 和 方法 组成
+        //      属性：事物的特征，
+        //      方法：事物的行为。
+
+        // new 关键字
+        // function Star(uname, age, sex) {
+        //     this.name = uname;
+        //     this.age = age;
+        //     this.sex = sex;
+        //     this.sing = function(sang) {
+        //         console.log(sang);
+        //     }
+        // }
+        // var Ldh = new Star('刘德华',18,'男');
+        // Ldh.sing('话语');
+        // console.log(Ldh);
+        // -------------------------------
+        // 遍历对象--  for...in
+        // var obj = {
+        //     name: '话老虎',
+        //     age: 18,
+        //     sex:'男',
+        //     f:function() {}
+        // }
+        // for(var k in obj) {
+        //     console.log(obj[k]);
+        // }
+
+        // ---------------------------------------
+        // 自定义对象--👆
+        // 内置对象--👇，JS自带的一些对象（常用或基本）
+        // 浏览器对象
+
+        //数学对象
+        // console.log(Math.PI);
+        // var myMath = {
+        //     PI:3.1415926535,
+        //     max:function() {
+        //         var max = arguments[0];
+        //         for(var i=1;i<arguments.length;i++) {
+        //             if(arguments[i]>max) {
+        //                 max = arguments[i];
+        //             }
+        //         }
+        //         return max;
+        //     },
+        //     min:function() {
+        //         var min = arguments[0];
+        //         for (var i = 1; i < arguments.length; i++) {
+        //             if (arguments[i] < min) {
+        //                 min = arguments[i];
+        //             }
+        //         }
+        //         return min;
+        //     }
+        // }
+
+        // console.log(myMath.PI);
+        // console.log(myMath.max(1,5,99));
+        // console.log(myMath.min(1,5,9));
+
+        // console.log(Math.abs(-1));   //绝对值
+        // console.log(Math.floor(1.9));//向下取整
+        // console.log(Math.ceil(1.1)); //向上取整
+        // console.log(Math.round(3.5));//四舍五入, .5 往大了取
+
+        //Math.random()--返回一个随机的小数  >1 x >=0
+        //console.log(Math.random());
+
+        // function getRandom(min, max) {
+        //     return Math.floor(Math.random() * (max - min + 1)) + min ;
+        // }
+
+        // // console.log(getRandom(1,10));
+        // var random = getRandom(1,10);
+        // console.log(random);
+        // while(true) {
+        //     var num = prompt('猜一个数字，在1~10之间');
+        //     if(num > random) {
+        //         alert('大了');
+        //     }
+        //     else if(num < random) {
+        //         alert('小了');
+        //     }
+        //     else {
+        //         alert('对了');
+        //         break;
+        //     }
+        // }
+
+
+        // Date() 日期对象 是一个构造函数，必须使用new 来调用
+        // var arr = new Array();
+        // var obj = new Object();
+        //如果没有参数，返回当前系统的当前时间
+        // var date = new Date();
+        // console.log(date.valueOf());
+        // console.log(date.getTime());
+        // console.log(Date.now());
+        // console.log(date.getFullYear());
+        // console.log(date.getMonth()+1);
+        // console.log(date.getHours());
+        // console.log(date.getMinutes());
+        // console.log(date.getSeconds());
+
+        // function getTime() {
+        //     var time = new Date();
+        //     var h = time.getHours();
+        //     h = h < 10 ? '0' + h: h;
+        //     var m = time.getMinutes();
+        //     m = m < 10 ? '0' + m : m;
+        //     var s = time.getSeconds();
+        //     s = s < 10 ? '0' + s : s;
+            
+        //     return h + ':' + m + ':' + s;
+        // }
+
+        // console.log(getTime());
+        // var date1 = new Date('2021-5-16 21:0:0');
+        // console.log(date1);
+        // console.log(date1.getDay());
+
+        // 倒计时
+        // function countDown(time) {
+        //     var nowTime = +new Date();
+        //     var inputTime = +new Date(time);
+        //     var times = (inputTime - nowTime)/1000;
+
+        //     var d = parseInt(times / 60 /60 / 24);
+        //     d = d < 10 ? '0' + d : d;
+        //     var h = parseInt(times / 60 /60 % 24);
+        //     h = h < 10 ? '0' + h : h;
+        //     var m = parseInt(times / 60 % 60);
+        //     m = m < 10 ? '0' + m : m;
+        //     var s = parseInt(times % 60);
+        //     s = s < 10 ? '0' + s : s;
+
+        //     return d + '天' + h + '时' + m + '分' + s + '秒';
+        // }
+        // console.log(countDown('2021-5-21 23:23'));
+        
+        // 数组对象
+        //instanceof  运算符，用来检测是否为数组
+        //Array.isAray(参数);
+        // var arr = [3,6,9,1];
+
+        // var arr1 = new Array();
+        // console.log(arr instanceof Array);
+        // arr.push(4,'zero');
+        // console.log(arr);
+        // arr.unshift('gr');
+        // console.log(arr);
+        // console.log(arr.pop());
+        // console.log(arr);
+        // console.log(arr.shift());
+        // console.log(arr);
+        // arr.reverse();
+        // console.log(arr);
+
+        // arr.sort(function(a,b) {
+        //     return a-b;
+        // });
+        // console.log(arr);
+        //返回数组元素的索引，只返回第一个满足条件的索引号，若没有该元素，返回-1
+        // console.log(arr.indexOf(9));//从前往后查找
+        // console.log(arr.lastIndexOf(9));//从后往前查找
+        // 添加、删除数组元素
+        // push() 在数组尾添加元素
+        // unshift 在数组开头添加元素
+        // pop() 删除数组的最后一个元素 一次删除一个
+        // shift 删除数组的第一个元素 一次只能删一个
+
+        // var arr = [1,2,3,4,5,6,7,4,3,2,1,5,5,9];
+        
+        // function unique(arr) {
+        //     var newArr = new Array();
+        //     for (var i = 0; i < arr.length; i++) {
+        //         if (newArr.indexOf(arr[i]) == -1) {
+        //             newArr[newArr.length] = arr[i];
+        //         }
+        //     }
+        //      console.log(newArr);
+        // }
+        // unique(arr);
+       
+        // // 数组转化尾字符串
+        // console.log(arr.toString());
+        // console.log(arr.join('-'));
+
+        // concat() 
+        // slice()
+        // splice()
+
+
+        // 字符串对象
+        // var arr = ['a','b','c','o','e','f','o','x','y','o','z','z','o','p','p'];
+        // var index = arr.indexOf('o');
+        // var num=0;
+        // // console.log(index);
+        // while(index !== -1) {
+        //     console.log(index);
+        //     index = arr.indexOf('o',index+1);
+        //     num++;
+        // }
+        // console.log(num);
+
+        // charAt();根据位置返回字符,可以遍历字符数组
+        // charCodeAt(index) 散会相应索引的ASCII值，可以用来判断大小写 
+
+        // var str = 'abcoefoxyozzopp';
+        // var o = {};
+        // for(var i =0;i<str.length ;i++) {
+        //     var chars = str.charAt(i);
+        //     if(o[chars]) {
+        //         o[chars]++;
+        //     } else {
+        //         o[chars]=1;
+        //     }
+        // }
+        // console.log(o);
+        
+        // 替换字符 replace('被替换的字符','替换为的字符'),只会替换第一个字符
+        // var str = 'andyandy';
+        // console.log(str.replace('a','b'));
+
+        // var str = 'abcoefoxyozzopp';
+        // while(str.indexOf('o') !== -1) {
+        //     str = str.replace('o','*');
+        // }
+        // console.log(str);
+        
+        //toUpperCase()
+        //toLowerCase()
+
+    </script>
+</body>
+
+</html>
