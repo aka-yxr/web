@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 密码提示css */
+        /* div {
+            width: 600px;
+            margin: 100px auto;
+        }
+        .message {
+            display: inline-block;
+            font-size: 12px;
+            color: #999;
+            background: url(https://login.sina.com.cn/images/register/reg_ico.png) no-repeat 0 0;
+            padding-left: 20px;
+        }
+        .wrong {
+            color: red;
+            background: url(https://login.sina.com.cn/images/register/reg_ico.png) no-repeat -60px 0;
+        } */
+
+        /* 开关灯 */
+        /* body {
+            background-color: #fff;
+        } */
+        
+        /* 换肤效果 */
+        /* body {
+            background: url(../Images/1.jpg) no-repeat center top;
+        }
+        li {
+            list-style: none;
+        }
+        .baidu {
+            overflow: hidden;
+            width: 410px;
+            padding-top: 3px;
+            margin: 100px auto;
+            background-color: #fff;
+        }
+        .baidu li {
+            float: left;
+            cursor: pointer;
+            margin: 0 1px;
+        }
+        .baidu img{
+            width: 100px;
+        } */
+    
+        /* 隔行变色 */
+        /* table {
+            width: 800px;
+            margin: 100px auto;
+            text-align: center;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        thead tr {
+            height: 30px;
+            background-color: skyblue;
+        }
+        tbody tr {
+            height: 30px;
+        }
+        tbody td {
+            border-bottom: 1px solid #d7d7d7;
+            font-size: 12px;
+            color: blue;
+        }
+        .bg {
+            background-color: pink;
+        } */
+    
+        /* 全选 */
+         /* .wrap {
+            width: 300px;
+            margin: 100px auto 0;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid #c0c0c0;
+            width: 300px;
+        }
+        th,
+        td {
+            border: 1px solid #d0d0d0;
+            color: #404060;
+            padding: 10px;
+        } 
+        th {
+            background-color: #09c;
+            font: bold 16px "微软雅黑";
+            color: #fff;
+        }       
+        td {
+            font: 14px "微软雅黑";
+        }      
+        tbody tr {
+            background-color: #f0f0f0;
+        }       
+        tbody tr:hover {
+            cursor: pointer;
+            background-color: #fafafa;
+        } */
+
+        
+    </style>
+</head>
+
+<body class="fa">
+    <!-- 密码提示 -->
+    <!-- <div class="register">
+        <input type="password" class="ipt">
+        <p class="message">请输入6~16位密码</p>
+    </div> -->
+    <!-- <script>
+        获取元素
+        var ipt = document.querySelector('.ipt');
+        var message = document.querySelector('.message');
+        // 注册事件
+        ipt.onblur = function() {
+            if(this.value.length < 6 || this.value.length > 16) {
+                message.className = 'message wrong';
+                message.value = '请输入6~16位';
+            }
+        }
+    </script> -->
+
+    <!-- 开关灯 -->
+    <!-- <button class="open">开关灯</button>
+    <script>
+        // 获取元素
+        var open = document.querySelector('.open');
+        var fa = document.querySelector('.fa');
+        var flag = 0;
+
+        open.onclick = function() {
+            if(flag == 0) {
+                fa.style.backgroundColor = 'black';
+                flag = 1;
+            } else {
+                fa.style.backgroundColor = '#fff';
+                flag = 0;
+            }
+            
+        }
+    </script> -->
+
+    <!-- 多元素效果 -->
+    <!-- <div>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+    </div>
+    <script>
+        // 获取元素
+        var btns = document.getElementsByTagName('button');
+        for(var i=0; i<btns.length; i++) {
+            btns[i].onclick = function() {
+                for(var j = 0;j<btns.length ;j++) {
+                    btns[j].style.backgroundColor = '';
+                }
+                this.style.backgroundColor = 'pink';
+
+            }
+        }
+
+    </script> -->
+
+    <!-- 换肤效果 -->
+    <!-- <ul class="baidu">
+        <li><img src="../Images/1.jpg" alt=""></li>
+        <li><img src="../Images/2.jpg" alt=""></li>
+        <li><img src="../Images/3.jpg" alt=""></li>
+        <li><img src="../Images/4.jpg" alt=""></li>
+    </ul>
+    <script>
+        var imgs = document.querySelector('.baidu').querySelectorAll('img');
+        for(var i = 0; i < imgs.length; i++) {
+            imgs[i].onclick = function() {
+                document.body.style.backgroundImage = 'url('+ this.src+')';
+            }
+        }
+
+    </script> -->
+
+    <!-- 隔行变色 -->
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>代码</th>
+                <th>名称</th>
+                <th>最新公布净值</th>
+                <th>累计净值</th>
+                <th>前单位净值</th>
+                <th>净值增长率</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>003526</td>
+                <td>农银金穗3个月定期开放债券</td>
+                <td>1.075</td>
+                <td>1.079</td>
+                <td>1.074</td>
+                <td>+0.047%</td>
+            </tr>
+            <tr>
+                <td>003526</td>
+                <td>农银金穗3个月定期开放债券</td>
+                <td>1.075</td>
+                <td>1.079</td>
+                <td>1.074</td>
+                <td>+0.047%</td>
+            </tr>
+            <tr>
+                <td>003526</td>
+                <td>农银金穗3个月定期开放债券</td>
+                <td>1.075</td>
+                <td>1.079</td>
+                <td>1.074</td>
+                <td>+0.047%</td>
+            </tr>
+            <tr>
+                <td>003526</td>
+                <td>农银金穗3个月定期开放债券</td>
+                <td>1.075</td>
+                <td>1.079</td>
+                <td>1.074</td>
+                <td>+0.047%</td>
+            </tr>
+            <tr>
+                <td>003526</td>
+                <td>农银金穗3个月定期开放债券</td>
+                <td>1.075</td>
+                <td>1.079</td>
+                <td>1.074</td>
+                <td>+0.047%</td>
+            </tr>
+            <tr>
+                <td>003526</td>
+                <td>农银金穗3个月定期开放债券</td>
+                <td>1.075</td>
+                <td>1.079</td>
+                <td>1.074</td>
+                <td>+0.047%</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        var trs = document.querySelector('tbody').querySelectorAll('tr');
+        for(var i = 0; i < trs.length ; i++) {
+            trs[i].onmouseover = function() {
+                this.className = 'bg';
+            }
+            trs[i].onmouseout = function() {
+                this.className = '';
+            }
+        }
+    </script> -->
+
+    <!-- 全选 -->
+    <!-- <div class="wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox" id="j_cbAll" />
+                    </th>
+                    <th>商品</th>
+                    <th>价钱</th>
+                </tr>
+            </thead>
+            <tbody id="j_tb">
+                <tr>
+                    <td>
+                        <input type="checkbox" />
+                    </td>
+                    <td>iPhone8</td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" />
+                    </td>
+                    <td>iPad Pro</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" />
+                    </td>
+                    <td>iPad Air</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" />
+                    </td>
+                    <td>Apple Watch</td>
+                    <td>2000</td>
+                </tr>
+    
+            </tbody>
+        </table>
+    </div>
+    <script>
+         // 获取元素
+            var j_cbAll = document.getElementById('j_cbAll'); // 全选按钮
+            var j_tbs = document.getElementById('j_tb').getElementsByTagName('input'); // 下面所有的复选框
+            // 注册事件
+            // 上面全选控制下面
+            j_cbAll.onclick = function () {
+                for (var i = 0; i < j_tbs.length; i++) {
+                    j_tbs[i].checked = this.checked;
+                }
+            }
+            // 下面反馈全选
+            for(var i = 0; i < j_tbs.length; i++) {
+                j_tbs[i].onclick = function() {
+                    var flag = true;
+
+                    for(var j = 0; j < j_tbs.length; j++) {
+                        if(!j_tbs[j].checked) {
+                            flag = false;
+                            break;
+                        }
+                    }
+                    j_cbAll.checked = flag;
+                }
+            }
+
+    </script> -->
+
+</body>
+
+</html>
