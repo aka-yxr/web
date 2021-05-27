@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- head开始 -->
+    <!-- head-top开始 -->
+    <div class="h-top">
+        <div class="w">
+            <!-- 左侧 -->
+            <div class="top-fl">
+                <div class="mr10">
+                    <span>您好， 欢迎光临汽配城网！</span>
+                    <a href="#">登录</a>
+                    <i class="vline">|</i>
+                    <a href="#">注册</a>
+                </div>
+            </div>
+            <!-- 右侧 -->
+            <div class="top-fr">
+                <ul>
+                    <li>
+                        <a href="#" class="">汽配城</a>
+                    </li>
+                    <i class="vline">|</i>
+                    <li>
+                        <a href="#">购物车【0】</a>
+                    </li>
+                    <i class="vline">|</i>
+                    <li class="white">
+                        <a href="#">收藏夹</a>
+                        <i class="t-icon"></i>
+                    </li>
+                    <i class="vline">|</i>
+                    <li class="white">
+                        <a href="#">商城入驻</a>
+                        <i class="t-icon"></i>
+                    </li>
+                    <i class="vline">|</i>
+                    <li>
+                        <a href="#">帮助中心</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- head-mid开始 -->
+    <div class="header">
+        <div class="w">
+            <div class="h-mid">
+                <!-- logo -->
+                <div class="h-logo">
+                    <a href="#" title="大伙汽配城" class="logo">
+                        <img src="image/logo.jpg" alt="" height="56px" width="154px">
+                    </a>
+                    <a href="#" class="logo1">
+                        <img src="image/logo_1.png" alt="" height="37px">
+                    </a>
+                    <a href="#" class="logo2">
+                        <img src="image/logo_2.png" alt="" height="22px">
+                    </a>
+                </div>
+                <!-- 搜索 -->
+                <div class="h-search">
+                    <div class="h-form">
+                        <input type="text" class="text" placeholder="芭比娃娃">
+                        <input type="button" class="btn" value="搜索">
+                    </div>
+                    <div class="h-hot">
+                        <span>热门搜索:</span>
+                        <a href="#">康明斯</a>
+                        <a href="#">弗列加</a>
+                        <a href="#">德纳</a>
+                        <a href="#">法士特</a>
+                        <a href="#">驾驶室</a>
+                        <a href="#">齿轮</a>
+                    </div>
+                </div>
+                <a href="#" class="mycar">
+                    <i class="car"></i>
+                    <span>我的购物车</span>
+                    <i class="arrow"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+
+
+
+
+
+    <!-- foot1尾部 -->
+    <div class="foot">
+        <div class="w">
+            <div class="service">
+                <a href="#">
+                    <dl class="msfs-1">
+                        <dt>
+                            <i class="op-icon one"></i>
+                        </dt>
+                        <dd>
+                            <h4>质量保证</h4>
+                            <p>正规渠道，质量保证</p>
+                        </dd>
+                    </dl>
+                </a>
+                <a href="#">
+                    <dl class="msfs-2">
+                        <dt>
+                            <i class="op-icon two"></i>
+                        </dt>
+                        <dd>
+                            <h4>品类齐全</h4>
+                            <p>各大车系千万配件，一张购齐</p>
+                        </dd>
+                    </dl>
+                </a>
+                <a href="#">
+                    <dl class="msfs-3">
+                        <dt>
+                            <i class="op-icon three"></i>
+                        </dt>
+                        <dd>
+                            <h4>全网低价</h4>
+                            <p>源头直达，价格大幅优于传统渠道</p>
+                        </dd>
+                    </dl>
+                </a>
+                <a href="#">
+                    <dl class="msfs-4">
+                        <dt>
+                            <i class="op-icon four"></i>
+                        </dt>
+                        <dd>
+                            <h4>售后无忧</h4>
+                            <p>安心选购，品牌保障，售后无忧</p>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+        <!-- 服务2 -->
+        <div class="info">
+            <dl class="msfi-1">
+                <dt>新手入门</dt>
+                <dd><a href="#">&gt;会员注册</a></dd>
+                <dd><a href="#">&gt;购物流程</a></dd>
+            </dl>
+            <dl class="msfi-2">
+                <dt>常见问题</dt>
+                <dd><a href="#">&gt;退换货政策</a></dd>
+            </dl>
+            <dl class="msfi-3">
+                <dt>支付方式</dt>
+                <dd><a href="#">&gt;支付方式</a></dd>
+            </dl>
+            <dl class="msfi-4">
+                <dt>配送说明</dt>
+                <dd><a href="#">&gt;关于配送</a></dd>
+            </dl>
+            <dl class="msfi-5">
+                <dt>关于我们</dt>
+                <dd><a href="#">&gt;商城介绍</a></dd>
+            </dl>
+            <dl class="msfi-6">
+                <dt>
+                    <img src="image/QR/b_ewm.png" alt="">
+                </dt>
+                <dd><a href="#"><span>扫码关注</span></a></dd>
+                <dd><p>汽配人网官方微信</p></dd>
+            </dl>
+        </div>
+        </div>
+    </div>
+    <!-- foot2尾部 -->
+    <div class="pw-foot">
+        <div class="w clearfix">
+            <div class="ft-logo">
+                <a href="#"></a>
+            </div>
+            <div class="ft-service">
+                <div class="group">
+                    <dl class="spot-item">
+                        <dt class="item-tit">新手指南</dt>
+                        <dd class="item-list">
+                            <a href="#">注册新用户</a>
+                            <a href="#">帮助中心</a>
+                        </dd>
+                    </dl>
+                    <dl class="spot-item">
+                        <dt class="item-tit">网站服务</dt>
+                        <dd class="item-list">
+                            <a href="#">汽配商城</a>
+                            <a href="#">汽配旺铺</a>
+                            <a href="#">汽配助手</a>
+                            <a href="#">营销宝</a>
+                        </dd>
+                    </dl>
+                    <dl class="spot-item item-mul">
+                        <dt class="item-tit">特色商城</dt>
+                        <dd class="item-list">
+                            <a href="#">商用车市场</a>
+                            <a href="#">东风市场</a>
+                            <a href="#">陕汽市场</a>
+                            <a href="#">北汽市场</a>
+                            <a href="#">专用汽车</a>
+                            <a href="#">乘用车市场</a>
+                            <a href="#">重汽市场</a>
+                            <a href="#">一汽市场</a>
+                            <a href="#">江淮市场</a>
+                        </dd>
+                    </dl>
+                    <dl class="spot-item ">
+                        <dt class="item-tit">地方分站</dt>
+                        <dd class="item-list">
+                            <a href="#">江苏分店</a>
+                            <a href="#">广东分店</a>
+                            <a href="#">山东分店</a>
+                            <a href="#">河南分店</a>
+                        </dd>
+                    </dl>
+                    <dl class="spot-item">
+                        <dt class="item-tit">移动端</dt>
+                        <dd class="item-list">
+                            <div class="m-sit">
+                                <a href="#">手机登录：m.qipeiren.com</a>
+                            </div>
+                            <div class="qr-code">
+                                <div class="app-btn">
+                                    <i class="app-icon"></i>
+                                    <span>iPhone</span>
+                                </div>
+                            </div>
+                            <div class="qr-code">
+                                <div class="app-btn">
+                                    <i class="app-icon2"></i>
+                                    <span>Android</span>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- foot3 -->
+    <div class="pw-foot w">
+        <div class="w">
+            <div class="fb-siteinfo">
+                <div class="site-nav clearfix">
+                    <a href="#">关于我们</a>
+                    <label for="">|</label>
+                    <a href="#">法律声明</a>
+                    <label for="">|</label>
+                    <a href="#">友情链接</a>
+                    <label for="">|</label>
+                    <a href="#">网站地图</a>
+                    <label for="">|</label>
+                    <a href="#">汽车配件批发</a>
+                    <label for="">|</label>
+                    <a href="#">汽车配件图片</a>
+                    <label for="">|</label>
+                    <a href="#">汽车配件大全</a>
+                    <label for="">|</label>
+                    <a href="#">汽配问答</a>
+                    <label for="">|</label>
+                    <a href="#">汽配厂家</a>
+                    <label for="">|</label>
+                    <a href="#">汽配品牌</a>
+                    <label for="">|</label>
+                    <a href="#">汽配主题</a>
+                    <label for="">|</label>
+                    <a href="#">汽配城</a>
+                    <label for="">|</label>
+                    <a href="#">鄂ICP备14009261号</a>
+                </div>
+                <div class="site-info">
+                    <a href="#">经营许可证编号：鄂B2-20140114</a>
+                    <span class="m120">服务热线：0719-8311727</span><br>
+                    <span class="di-vm">Copyright © 2005-2021 十堰亿脉科技有限公司 版权所有</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 固定电梯 -->
+    <div class="right-side">
+        <div class="menu">
+            <ul class="menu-top">
+                <li>
+                    <i class="user"></i>
+                    <span style="right: 60px;">个人中心</span>
+                </li>
+                <s></s>
+                <li class="right-car">
+                    <i class="car"></i>
+                    <p>购物车</p>
+                    <em>0</em>
+                </li>
+                <s></s>
+                <li>
+                    <i class="asset"></i>
+                    <span style="right: 60px;">资产中心</span>
+                </li>
+                <li>
+                    <i class="at-goods"></i>
+                    <span style="right: 60px;">关注商品</span>
+                </li>
+                <li>
+                    <i class="history"></i>
+                    <span style="right: 60px;">浏览历史</span>
+                </li>
+            </ul>
+            <ul class="menu-bot">
+                <li>
+                    <i class="go-advise"></i>
+                    <span style="right: 60px;">意见反馈</span>
+                </li>
+                <li>
+                    <i class="go-top"></i>
+                    <span style="right: 60px;">返回顶部</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
