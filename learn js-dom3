@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        /* 切换栏 */
+        /* li {
+            list-style-type: none;
+        }  
+        .tab {
+            width: 978px;
+            margin: 100px auto;
+        }
+        .tab_list {
+            height: 39px;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+        .tab_list li {
+            float: left;
+            height: 39px;
+            line-height: 39px;
+            padding: 0 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .tab_list .current {
+            background-color: #c81623;
+            color: #fff;
+        }
+        .item_info {
+            padding: 20px 0 0 20px;
+        }     
+        .item {
+            display: none;
+        } */
+
+        /* 下拉菜单 */
+        /* li {
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .nav {
+            margin: 100px;
+        }
+        .nav>li {
+            position: relative;
+            float: left;
+            width: 80px;
+            height: 41px;
+            text-align: center;
+        }
+        .nav li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 41px;
+            color: #333;
+        }
+        .nav>li>a:hover {
+            background-color: #eee;
+        }
+        .nav ul {
+            display: none;
+            position: absolute;
+            top: 41px;
+            left: 0;
+            width: 100%;
+            border-left: 1px solid #FECC5B;
+            border-right: 1px solid #FECC5B;
+        }
+        .nav ul li {
+            border-bottom: 1px solid #FECC5B;
+        }
+        .nav ul li a:hover {
+            background-color: #FFF5DA;
+        } */
+
+        /* 简单 */
+        /* body {
+            padding: 100px;
+        }
+        textarea {
+            width: 200px;
+            height: 100px;
+            border: 1px solid pink;
+            outline: none;
+            resize: none;
+        }
+        ul {
+            margin-top: 50px;
+        }
+        li {
+            width: 300px;
+            padding: 5px;
+            background-color: rgb(245, 209, 243);
+            color: red;
+            font-size: 14px;
+            margin: 15px 0;
+        } */
+
+        /* 删除留言 */
+        /* body {
+            padding: 100px;
+        }
+
+        textarea {
+            width: 200px;
+            height: 100px;
+            border: 1px solid pink;
+            outline: none;
+            resize: none;
+        }
+
+        ul {
+            margin-top: 50px;
+        }
+
+        li {
+            width: 300px;
+            padding: 5px;
+            background-color: rgb(245, 209, 243);
+            color: red;
+            font-size: 14px;
+            margin: 15px 0;
+        }
+
+        li a {
+            float: right;
+        } */
+
+        /* 动态生成表格 */
+        /* table {
+            width: 500px;
+            margin: 100px auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td,
+        th {
+            border: 1px solid #333;
+        }
+        thead tr {
+            height: 40px;
+            background-color: #ccc;
+        } */
+
+
+    </style>
+</head>
+
+<body>
+    <!-- 切换栏 -->
+    <!-- <div class="tab">
+        <div class="tab_list">
+            <ul>
+                <li class="current">商品介绍</li>
+                <li>规格与包装</li>
+                <li>售后保障</li>
+                <li>商品评价（50000）</li>
+                <li>手机社区</li>
+            </ul>
+        </div>
+        <div class="tab_con">
+            <div class="item" style="display: block;">
+                商品介绍模块内容
+            </div>
+            <div class="item">
+                规格与包装模块内容
+            </div>
+            <div class="item">
+                售后保障模块内容
+            </div>
+            <div class="item">
+                商品评价（50000）模块内容
+            </div>
+            <div class="item">
+                手机社区模块内容
+            </div>
+    
+        </div>
+    </div>
+    <script>
+        var tab_list = document.querySelector('.tab_list');
+        var lis = tab_list.querySelectorAll('li');
+        var items = document.querySelectorAll('.item');
+
+        for( var i = 0; i < lis.length; i++) {
+            lis[i].setAttribute('index',i);
+            lis[i].onclick = function() {
+                for(var i = 0; i< lis.length; i++) {
+                    lis[i].className = '';
+                    
+                }
+                this.className = 'current';
+                // 显示下面的模块
+                var index = this.getAttribute('index');
+                for( var i = 0; i < items.length; i++) {
+                    items[i].style.display = 'none';
+                }
+                items[index].style.display = 'block';
+            }
+        }
+
+    </script> -->
+
+    <!-- 下拉菜单 -->
+    <!-- <ul class="nav">
+        <li>
+            <a href="#">微博</a>
+            <ul>
+                <li>
+                    <a href="">私信</a>
+                </li>
+                <li>
+                    <a href="">评论</a>
+                </li>
+                <li>
+                    <a href="">@我</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">微博</a>
+            <ul>
+                <li>
+                    <a href="">私信</a>
+                </li>
+                <li>
+                    <a href="">评论</a>
+                </li>
+                <li>
+                    <a href="">@我</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">微博</a>
+            <ul>
+                <li>
+                    <a href="">私信</a>
+                </li>
+                <li>
+                    <a href="">评论</a>
+                </li>
+                <li>
+                    <a href="">@我</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">微博</a>
+            <ul>
+                <li>
+                    <a href="">私信</a>
+                </li>
+                <li>
+                    <a href="">评论</a>
+                </li>
+                <li>
+                    <a href="">@我</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        var nav = document.querySelector('.nav');
+        var lis = nav.children;
+        for(var i = 0; i < lis.length; i++) {
+            lis[i].onmouseover = function() {
+                this.children[1].style.display = 'block';
+            }
+             lis[i].onmouseout = function () {
+                this.children[1].style.display = 'none';
+            }
+        }
+    </script> -->
+
+    <!-- 创建节点 -->
+    <!-- <textarea name="" id=""></textarea>
+    <button>发布</button>
+    <ul>
+    
+    </ul>
+    <script> 
+        // 获取元素
+        var ul = document.querySelector('ul');
+        var btn = document.querySelector('button');
+        var text = document.querySelector('textarea');
+        
+        btn.onclick = function() {
+            if (text.value == '') {
+                alert('您没有输入内容');
+                return false;
+            } else {
+                var li = document.createElement('li');
+                li.innerHTML = text.value;
+                ul.insertBefore(li,ul.children[0]);
+            }
+        }
+    </script> -->
+
+    <!-- 删除节点 -->
+    <!-- <button>删除</button>
+    <ul>
+        <li>熊大</li>
+        <li>熊二</li>
+        <li>光头强</li>
+    </ul>
+    <script>
+        // 1.获取元素
+        var ul = document.querySelector('ul');
+        var btn = document.querySelector('button');
+        // 2. 删除元素  node.removeChild(child)
+        // ul.removeChild(ul.children[0]);
+        // 3. 点击按钮依次删除里面的孩子
+        btn.onclick = function () {
+            if (ul.children.length == 0) {
+                this.disabled = true;
+            } else {
+                ul.removeChild(ul.children[0]);
+            }
+        }
+    </script> -->
+
+    <!-- 删除留言 -->
+    <!-- <textarea name="" id=""></textarea>
+    <button>发布</button>
+    <ul>
+
+    </ul>
+    <script>
+        var btn = document.querySelector('button');
+        var text = document.querySelector('textarea');
+        var ul = document.querySelector('ul');
+
+        btn.onclick = function() {
+            if(text.value == '') {
+                alert('没有输入！！！');
+                return false;
+            } else {
+                var li = document.createElement('li');
+                li.innerHTML = text.value + "<a href='javascript:;'>删除</a> ";
+                ul.insertBefore(li, ul.children[0]);
+            }
+
+            // 删除
+            var as = document.querySelectorAll('a');
+            for(var i = 0; i < as.length; i++) {
+                as[i].onclick = function() {
+                    ul.removeChild(this.parentNode);
+                }
+            }
+        }
+    </script> -->
+
+    <!-- 克隆节点 -->
+    <!-- <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <script>
+        var ul = document.querySelector('ul');
+        var lili = ul.children[0].cloneNode(true);
+        ul.appendChild(lili);
+    </script> -->
+
+    <!-- 动态生成表格 -->
+    <!-- <table cellspacing="0">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>科目</th>
+                <th>成绩</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        <script>
+            var datas = [{
+                name: '魏璎珞',
+                subject: 'JavaScript',
+                score: 100
+            }, {
+                name: '弘历',
+                subject: 'JavaScript',
+                score: 98
+            }, {
+                name: '傅恒',
+                subject: 'JavaScript',
+                score: 99
+            }, {
+                name: '明玉',
+                subject: 'JavaScript',
+                score: 88
+            }, {
+                name: '大猪蹄子',
+                subject: 'JavaScript',
+                score: 0
+            }];
+
+            var tbody = document.querySelector('tbody');
+
+            for(var i = 0; i < datas.length; i++) {
+                var tr = document.createElement('tr');
+                tbody.appendChild(tr);
+
+                for( var k in datas[i]) {
+                    var td = document.createElement('td');
+                    td.innerHTML = datas[i][k];
+                    tr.appendChild(td);
+                }
+
+                var td = document.createElement('td');
+                td.innerHTML = '<a href= "javascript:;">删除</a>';
+                tr.appendChild(td);
+            }
+            var as = document.querySelectorAll('a');
+            for(var i = 0; i < as.length; i++) {
+                as[i].onclick = function() {
+                    tbody.removeChild(this.parentNode.parentNode);
+                }
+            }
+
+        </script> -->
+
+        
+</body>
+
+</html>
